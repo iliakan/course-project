@@ -14,10 +14,13 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#"><strong>AnyShop</strong></a>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="assets/icons/icon-menu.svg" alt="menu icon">
+                </button>
+                <a class="navbar-brand" href="#"><strong>AnyShop</strong></a>
+            </div>
+            <a href="#" class="mobile-search-menu-icon"><img src="assets/icons/icon-search.svg" alt="menu icon"></a>
 
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
@@ -30,7 +33,7 @@
                     <li class="nav-item">
                         <form class="form-inline my-2 my-md-0 ml-lg-5">
                             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button type="submit" class="btn btn-outline-primary">search</button>
+                            <button type="submit" class="btn btn-outline-primary">Search</button>
                         </form>
                     </li>
                 </ul>
@@ -45,13 +48,67 @@
 </header>
 <main role="main">
     <div class="container pt-5">
-        <h3 class="h4 text-center mt-5 mb-3">Log in to your account</h3>
-        <form></form>
+        <h3 class="h4 text-center font-weight-normal mt-5 mb-4">Log in to your account</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out!
+                    </div>
+                    <div class="jumbotron jumbotron-light jumbotron-form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check mb-4">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Buy now</button>
+                        <div class="form-footer mt-4">
+                            Don’t have an account yet? <a href="#">Register here</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="h4 text-center font-weight-normal text-uppercase my-5 d-none d-lg-block">or</div>
+                <div class="socials mb-5">
+                    <a href="#" class="btn btn-primary btn-social -fb">
+                        <img src="assets/icons/icon-facebook.svg" alt="">
+                        Facebook
+                    </a>
+                    <a href="#" class="btn btn-primary btn-social -vk">
+                        <img src="assets/icons/icon-vk.svg" alt="">
+                        Vkontakte
+                    </a>
+                    <a href="#" class="btn btn-primary btn-social -twitter">
+                        <img src="assets/icons/icon-twitter.svg" alt="">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">sticky footer content here.</span>
+        <div class="footer-inner">
+            <div class="footer-menu">
+                <a href="#" class="text-muted">Terms and Conditions</a>
+                <span class="d-none d-md-inline-flex">|</span>
+                <a href="#" class="text-muted">Privacy</a>
+                <span class="d-none d-md-inline-flex">|</span>
+                <a href="#" class="text-muted">Cookies</a>
+                <span class="d-none d-md-inline-flex">|</span>
+                <a href="#" class="text-muted">Home shopping guarantee</a>
+            </div>
+            <div>
+                © 1998-2019, AnyShop.com, Inc. or its affiliates
+            </div>
+        </div>
     </div>
 </footer>
 
