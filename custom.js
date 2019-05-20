@@ -1,4 +1,5 @@
 jQuery(function() {
+    // modal
     $(document).on('show.bs.modal', function(event) {
         if (!event.relatedTarget) {
             $('.modal')
@@ -21,5 +22,35 @@ jQuery(function() {
 
     $(document).on('hide.bs.modal', function() {
         $('html').removeClass('no-scroll');
+    });
+
+    // sidebar
+    $('.sidebar .dropdown-toggle').on('click', function (e) {
+        var $el = $(this).children('.dropdown-toggle');
+        var $parent = $el.offsetParent('.dropdown-menu');
+        var $backdrop = $('.backdrop');
+
+        if ($parent.hasClass('show')) {
+            $parent.removeClass('show');
+            $backdrop.removeClass('show');
+        } else {
+            $parent.addClass('show');
+            $backdrop.addClass('show');
+        }
+        e.preventDefault();
+        // e.stopPropagation();
+    });
+
+    $('.backdrop').on('click', function() {
+        $(this).removeClass('show');
+    });
+
+    $('.sidebar .dropdown-item').on('click', function() {
+        $('.backdrop').removeClass('show');
+    });
+
+    $('.sidebar .dropdown').on('hidden.bs.dropdown', function () {
+        $(this).find('li.dropdown').removeClass('show open');
+        $(this).find('ul.dropdown-menu').removeClass('show open');
     });
 });
