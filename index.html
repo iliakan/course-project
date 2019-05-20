@@ -15,7 +15,10 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler d-none d-md-inline-flex d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="assets/icons/icon-menu.svg" alt="menu icon">
+                </button>
+                <button class="navbar-toggler d-inline-flex d-md-none" type="button" data-toggle="modal" data-target="#xsMenuModal">
                     <img src="assets/icons/icon-menu.svg" alt="menu icon">
                 </button>
                 <a class="navbar-brand" href="#"><strong>AnyShop</strong></a>
@@ -111,11 +114,101 @@
         </div>
     </div>
 </footer>
+<div
+    class="modal fade"
+    id="xsMenuModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="xsMenuModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Menu
+                <button
+                        type="button"
+                        class="btn-close float-none px-2 py-2"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <img src="assets/icons/icon-close.svg" alt="close">
+                </button>
+            </div>
+            <div class="modal-menu">
+                <a href="#" class="modal-menu__item">Sales</a>
+                <a href="#" class="modal-menu__item">Gift Cards</a>
+                <a href="#" class="modal-menu__item">Login</a>
+                <a href="#" class="modal-menu__item">Register</a>
+                <a href="#" class="modal-menu__item">Have a question? <img src="assets/icons/icon-chat.svg" alt=""></a>
+                <h3 class="h6 mb-0 modal-menu__title">Product categories</h3>
+                <a
+                    href="#"
+                    class="modal-menu__item is-submenu"
+                    data-toggle="modal"
+                    data-target="#menuItemModal">
+                    Camera & Photo
+                </a>
+                <a href="#" class="modal-menu__item is-submenu">Home Cinema, TV & Video</a>
+                <a href="#" class="modal-menu__item is-submenu">Mobile Phones</a>
+                <a href="#" class="modal-menu__item is-submenu">Computers & Components</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+    class="modal fade"
+    id="menuItemModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="menuItemModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button
+                        type="button"
+                        class="arrow-back"
+                        data-toggle="modal"
+                        data-target="#xsMenuModal"
+                        aria-label="back">
+                    <img src="assets/icons/icon-arrow.svg" alt="back">
+                </button>
+                Camera & Photo
+                <button
+                        type="button"
+                        class="btn-close float-none px-2 py-2"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <img src="assets/icons/icon-close.svg" alt="close">
+                </button>
+            </div>
+            <div class="modal-menu">
+                <a href="#" class="modal-menu__item">Home</a>
+                <a href="#" class="modal-menu__item">Switch to business account</a>
+                <a href="#" class="modal-menu__item">Buy a gift card</a>
+                <a
+                        href="#"
+                        class="modal-menu__item"
+                        data-toggle="modal"
+                        data-target="#signUpModal">
+                    Sign up
+                </a>
+                <a
+                        href="#"
+                        class="modal-menu__item"
+                        data-toggle="modal"
+                        data-target="#signInModal">
+                    Sign in
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="custom.js"></script>
 </body>
 </html>
