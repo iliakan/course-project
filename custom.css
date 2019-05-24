@@ -777,6 +777,9 @@ form button[type="submit"] {
 
 .description-col .product-img {
     padding: 1.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .description-col .product-desc {
