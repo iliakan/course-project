@@ -766,6 +766,7 @@ form button[type="submit"] {
     font-size: 18px;
     line-height: 24px;
     color: #373A3C;
+    margin-top: 0;
 }
 
 .description-col {
