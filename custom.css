@@ -941,3 +941,81 @@ form button[type="submit"] {
         margin-right: -15px;
     }
 }
+
+.product-info-tabs {
+    margin-top: 2rem;
+}
+
+@media all and (min-width: 767px) {
+    .product-info-tabs {
+        margin-top: 3rem;
+    }
+}
+
+.tab-content>.tab-pane {
+    padding-top: 1.5rem;
+}
+
+.tab-content>.tab-pane * {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tab-content>.tab-pane ul li {
+    margin-bottom: 5px;
+}
+
+.product-info .nav.nav-tabs {
+    position: relative;
+}
+
+@media all and (max-width: 576px) {
+    .product-info .nav.nav-tabs:before, .product-info .nav.nav-tabs:after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        width: 15px;
+        height: 1px;
+        background-color: #dee2e6;
+    }
+
+    .product-info .nav.nav-tabs:before {
+        left: -15px;
+    }
+
+    .product-info .nav.nav-tabs:after {
+        right: -15px;
+    }
+
+    .product-info .btn {
+        width: 100%;
+    }
+}
+
+.product-info {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 6rem;
+}
+
+.p-notice {
+    margin-top: 1.5rem;
+}
+
+@media all and (min-width: 767px) {
+    .product-info {
+        margin-top: 0;
+    }
+
+    .p-notice {
+        margin-top: 1rem;
+    }
+}
+
+.text-success {
+    color: #478F47;
+}
+
+.product-info ul li, .product-info .p-notice {
+    line-height: 26px;
+}
