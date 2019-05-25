@@ -18,7 +18,7 @@
                 <button class="navbar-toggler d-none d-md-inline-flex d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="assets/icons/icon-menu.svg" alt="menu icon">
                 </button>
-                <button class="navbar-toggler d-inline-flex d-md-none" type="button" data-toggle="modal" data-target="#xsMenuModal">
+                <button class="navbar-toggler d-inline-flex d-md-none has-messages" type="button" data-toggle="modal" data-target="#xsMenuModal">
                     <img src="assets/icons/icon-menu.svg" alt="menu icon">
                 </button>
                 <a class="navbar-brand" href="#"><strong>AnyShop</strong></a>
@@ -50,6 +50,42 @@
     </nav>
 </header>
 <main role="main">
+    <div class="chat fixed">
+        <div class="chat-header" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Have a question?
+            <img src="assets/icons/icon-chat-white.svg" alt="icon-chat">
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div class="chat-inner ">
+                <div class="chat-body">
+                    <div class="chat-message income">
+                        <div class="chat-message-date">AnyShop @ 16:45</div>
+                        <div class="chat-message-inner">
+                            hello
+                        </div>
+                    </div>
+                    <div class="chat-message outcome">
+                        <div class="chat-message-date">you @ 16:47</div>
+                        <div class="chat-message-inner">
+                            hello
+                        </div>
+                    </div>
+                    <div class="chat-message income">
+                        <div class="chat-message-date">AnyShop @ 16:50</div>
+                        <div class="chat-message-inner">
+                            hello
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-footer">
+                    <form class="form-inline form-inline-flex">
+                        <input class="form-control mr-2" type="text">
+                        <button type="submit" class="btn btn-send"><img src="assets/icons/icon-send.svg" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="backdrop"></div>
     <div class="container">
         <div class="row flex-column-reverse flex-lg-row">
@@ -327,7 +363,10 @@
                 <a href="#" class="modal-menu__item">Gift Cards</a>
                 <a href="#" class="modal-menu__item">Login</a>
                 <a href="#" class="modal-menu__item">Register</a>
-                <a href="#" class="modal-menu__item">Have a question? <img src="assets/icons/icon-chat.svg" alt=""></a>
+                <a href="#"
+                   class="modal-menu__item"
+                   data-toggle="modal"
+                   data-target="#chatModal">Have a question? <img src="assets/icons/icon-chat.svg" alt=""></a>
                 <h3 class="h6 mb-0 modal-menu__title">Product categories</h3>
                 <a
                     href="#"
@@ -388,6 +427,66 @@
                     data-target="#signInModal">
                 Sign in
                 </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+    class="modal fade"
+    id="chatModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="chatModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button
+                    type="button"
+                    class="arrow-back"
+                    data-toggle="modal"
+                    data-target="#xsMenuModal"
+                    aria-label="back">
+                    <img src="assets/icons/icon-arrow.svg" alt="back">
+                </button>
+                Have a question?
+                <button
+                        type="button"
+                        class="btn-close float-none px-2 py-2"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <img src="assets/icons/icon-close.svg" alt="close">
+                </button>
+            </div>
+            <div class="chat">
+                <div class="chat-inner">
+                    <div class="chat-body">
+                        <div class="chat-message income">
+                            <div class="chat-message-date">AnyShop @ 16:45</div>
+                            <div class="chat-message-inner">
+                                hello
+                            </div>
+                        </div>
+                        <div class="chat-message outcome">
+                            <div class="chat-message-date">you @ 16:47</div>
+                            <div class="chat-message-inner">
+                                hello
+                            </div>
+                        </div>
+                        <div class="chat-message income">
+                            <div class="chat-message-date">AnyShop @ 16:50</div>
+                            <div class="chat-message-inner">
+                                hello
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-footer">
+                        <form class="form-inline form-inline-flex">
+                            <input class="form-control mr-2" type="text">
+                            <button type="submit" class="btn btn-send"><img src="assets/icons/icon-send.svg" alt=""></button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
