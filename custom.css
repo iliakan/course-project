@@ -143,6 +143,13 @@ form button[type="submit"] {
     padding-left: 3rem;
     padding-right: 3rem;
     font-weight: 500;
+    width: 100%;
+}
+
+@media all and (min-width: 767px) {
+    form button[type="submit"] {
+        width: auto;
+    }
 }
 
 .form-footer {
@@ -1186,4 +1193,9 @@ form button[type="submit"] {
     height: 38px;
     background-color: #5BC0DE;
     border-radius: 4px;
+}
+
+.alert.alert-primary {
+    color: #31708F;
+    background: #D9EDF7;
 }

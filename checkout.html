@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <title>Course Project Product list</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div>
+                <button class="navbar-toggler d-none d-md-inline-flex d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="assets/icons/icon-menu.svg" alt="menu icon">
+                </button>
+                <button class="navbar-toggler d-inline-flex d-md-none" type="button" data-toggle="modal" data-target="#xsMenuModal">
+                    <img src="assets/icons/icon-menu.svg" alt="menu icon">
+                </button>
+                <a class="navbar-brand" href="#"><strong>AnyShop</strong></a>
+            </div>
+            <a href="#" class="mobile-search-menu-icon"><img src="assets/icons/icon-search.svg" alt="menu icon"></a>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sales <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-md-0 ml-lg-5">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <button type="submit" class="btn btn-outline-primary">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <div>
+                    <a href="login.html" class="text-muted">Login</a>
+                    |
+                    <a href="#" class="text-muted">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main role="main">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <form>
+                    <h3 class="h5 mb-4 mt-4 text-md-center">Your order</h3>
+                    <div class="alert alert-primary" role="alert">
+                        Your order has been confirmed. The confirmation email is sent to youe address
+                    </div>
+                    <div class="product-list-box">
+                        <div class="box-inner-col description-col">
+                            <div class="product-img">
+                                <img src="assets/images/canon1.png" alt="img">
+                            </div>
+                            <div class="product-desc">
+                                <h4 class="col-title mb-2">Canon EOS 200D Digital SLR Camera</h4>
+                                <div class="rate">
+                                    <i class="icon-star checked"></i>
+                                    <i class="icon-star checked"></i>
+                                    <i class="icon-star checked"></i>
+                                    <i class="icon-star checked"></i>
+                                    <i class="icon-star checked"></i>
+                                    <span class="rate-amount ml-2 d-inline-block d-md-none">121</span>
+                                </div>
+                                <p class="rate-amount d-none d-md-block mt-1">11 reviews</p>
+                                <p class="price-text mb-0 mt-2 d-inline-block d-md-none"><strong>€ 47.31</strong></p>
+                            </div>
+                        </div>
+                        <div class="box-inner-col price-col justify-content-center">
+                            <p class="mb-0 font-weight-light">Total:</p>
+                            <h4 class="col-title price-text mb-2">€ 491</h4>
+                        </div>
+                    </div>
+                    <h3 class="h5 mb-4 mt-5 text-md-center">Your details</h3>
+                    <div class="jumbotron jumbotron-light jumbotron-form mb-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInput">Name:</label>
+                                    <input type="text" class="form-control" id="exampleInput" placeholder="Some name">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInput2">Email:</label>
+                                    <input type="email" class="form-control" id="exampleInput2" placeholder="email@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInput3">Phone:</label>
+                                    <input type="text" class="form-control" id="exampleInput3" placeholder="+44 7911 123456">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="exampleInput4">Address:</label>
+                                    <input type="text" class="form-control" id="exampleInput4" placeholder="Westminster, London SW1A 0AA, UK">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2 mb-5 my-sm-5">
+                        <button type="submit" class="btn btn-primary btn-lg">Confirm and pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-menu">
+                <a href="#" class="text-muted">Terms and Conditions</a>
+                <span class="d-none d-md-inline-flex">|</span>
+                <a href="#" class="text-muted">Privacy</a>
+                <span class="d-none d-md-inline-flex">|</span>
+                <a href="#" class="text-muted">Cookies</a>
+                <span class="d-none d-md-inline-flex">|</span>
+                <a href="#" class="text-muted">Home shopping guarantee</a>
+            </div>
+            <div>
+                © 1998-2019, AnyShop.com, Inc. or its affiliates
+            </div>
+        </div>
+    </div>
+</footer>
+<div
+        class="modal fade"
+        id="xsMenuModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="xsMenuModalLabel"
+        aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Menu
+                <button
+                        type="button"
+                        class="btn-close float-none px-2 py-2"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <img src="assets/icons/icon-close.svg" alt="close">
+                </button>
+            </div>
+            <div class="modal-menu">
+                <a href="#" class="modal-menu__item">Sales</a>
+                <a href="#" class="modal-menu__item">Gift Cards</a>
+                <a href="#" class="modal-menu__item">Login</a>
+                <a href="#" class="modal-menu__item">Register</a>
+                <a href="#" class="modal-menu__item">Have a question? <img src="assets/icons/icon-chat.svg" alt=""></a>
+                <h3 class="h6 mb-0 modal-menu__title">Product categories</h3>
+                <a
+                        href="#"
+                        class="modal-menu__item is-submenu"
+                        data-toggle="modal"
+                        data-target="#menuItemModal">
+                    Camera & Photo
+                </a>
+                <a href="#" class="modal-menu__item is-submenu">Home Cinema, TV & Video</a>
+                <a href="#" class="modal-menu__item is-submenu">Mobile Phones</a>
+                <a href="#" class="modal-menu__item is-submenu">Computers & Components</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+        class="modal fade"
+        id="menuItemModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="menuItemModalLabel"
+        aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button
+                        type="button"
+                        class="arrow-back"
+                        data-toggle="modal"
+                        data-target="#xsMenuModal"
+                        aria-label="back">
+                    <img src="assets/icons/icon-arrow.svg" alt="back">
+                </button>
+                Camera & Photo
+                <button
+                        type="button"
+                        class="btn-close float-none px-2 py-2"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <img src="assets/icons/icon-close.svg" alt="close">
+                </button>
+            </div>
+            <div class="modal-menu">
+                <a href="#" class="modal-menu__item">Home</a>
+                <a href="#" class="modal-menu__item">Switch to business account</a>
+                <a href="#" class="modal-menu__item">Buy a gift card</a>
+                <a
+                        href="#"
+                        class="modal-menu__item"
+                        data-toggle="modal"
+                        data-target="#signUpModal">
+                    Sign up
+                </a>
+                <a
+                        href="#"
+                        class="modal-menu__item"
+                        data-toggle="modal"
+                        data-target="#signInModal">
+                    Sign in
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+</body>
+</html>
