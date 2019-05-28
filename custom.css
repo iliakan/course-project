@@ -13,6 +13,7 @@ body {
 main {
     flex: 1 0 auto;
     padding: 40px 0 20px;
+    position: relative;
 }
 
 @media all and (max-width: 767px) {
@@ -139,7 +140,7 @@ body.no-scroll {
     }
 }
 
-form button[type="submit"] {
+form button[type="submit"]:not(.btn-send) {
     padding-left: 3rem;
     padding-right: 3rem;
     font-weight: 500;
@@ -147,7 +148,7 @@ form button[type="submit"] {
 }
 
 @media all and (min-width: 767px) {
-    form button[type="submit"] {
+    form button[type="submit"]:not(.btn-send) {
         width: auto;
     }
 }
@@ -370,6 +371,12 @@ form button[type="submit"] {
 }
 
 /* sidebar */
+@media all and (max-width: 767px) {
+    .list-group-item {
+        border-radius: 0 !important;
+    }
+}
+
 .list-group-item.dropdown.show {
     border-top-right-radius: 0;
     border-right-color: transparent;
