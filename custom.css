@@ -56,10 +56,6 @@ body.no-scroll {
 }
 
 @media (min-width: 767px) {
-    .navbar {
-        box-shadow: none;
-    }
-
     .navbar-brand {
         margin-left: 0;
         margin-right: 1rem;
