@@ -1043,6 +1043,22 @@ form button[type="submit"]:not(.btn-send) {
     line-height: 26px;
 }
 
+.form-inline.form-inline-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-inline.form-inline-flex .form-control {
+    display: inline-flex;
+    flex: 0 0 calc(100% - 46px);
+}
+
+.alert.alert-primary {
+    color: #31708F;
+    background: #D9EDF7;
+}
+
+/* chat in BEM methodology */
 .chat {
     z-index: 999;
 }
@@ -1061,7 +1077,7 @@ form button[type="submit"]:not(.btn-send) {
     left: 10%;
 }
 
-.chat-header {
+.chat .chat__header {
     height: 38px;
     background: #5BC0DE;
     border-radius: 4px 4px 0 0;
@@ -1074,7 +1090,7 @@ form button[type="submit"]:not(.btn-send) {
     cursor: pointer;
 }
 
-.chat-inner {
+.chat .chat__inner {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
@@ -1083,34 +1099,34 @@ form button[type="submit"]:not(.btn-send) {
     background-color: #fff;
 }
 
-.chat.fixed .chat-inner {
+.chat.fixed .chat__inner {
     border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
 }
 
-.chat-body {
+.chat .chat__body {
     flex-grow: 1;
     padding: 1rem .875rem;
     overflow-y: auto;
 }
 
-.chat-message-date {
+.chat .chat__message--date {
     font-size: 10px;
     line-height: 16px;
     color: #979797;
     width: 80%;
 }
 
-.modal .chat-message-date {
+.modal .chat .chat__message--date {
     width: 70%;
 }
 
-.chat-message {
+.chat .chat__message {
     display: flex;
     flex-direction: column;
 }
 
-.chat-message .chat-message-inner {
+.chat .chat__message .chat__message--inner {
     border-radius: 4px;
     padding: .925rem;
     font-size: 14px;
@@ -1123,35 +1139,35 @@ form button[type="submit"]:not(.btn-send) {
     flex: 1 0 auto;
 }
 
-.modal .chat-message .chat-message-inner {
+.modal .chat .chat__message .chat__message--inner {
     width: 70%;
 }
 
-.chat-message.income .chat-message-inner {
+.chat .chat__message.-income .chat__message--inner {
     background-color: #ECEEEF;
     margin-left: .75rem;
 }
 
-.chat-message.outcome .chat-message-inner {
+.chat .chat__message.-outcome .chat__message--inner {
     background-color: #D9F6FF;
     margin-right: .75rem;
 }
 
-.chat-message.outcome .chat-message-inner {
+.chat .chat__message.-outcome .chat__message--inner {
     align-self: flex-end;
 }
 
-.chat-message.income .chat-message-date {
+.chat .chat__message.-income .chat__message--date {
     margin-left: .75rem;
     text-align: right;
 }
 
-.chat-message.outcome .chat-message-date {
+.chat .chat__message.-outcome .chat__message--date {
     margin-right: .75rem;
     align-self: flex-end;
 }
 
-.chat-message .chat-message-inner:before {
+.chat .chat__message .chat__message--inner:before {
     content: '';
     position: absolute;
     bottom: .5rem;
@@ -1159,33 +1175,23 @@ form button[type="submit"]:not(.btn-send) {
     border-color: transparent;
 }
 
-.chat-message.outcome .chat-message-inner:before {
+.chat .chat__message.-outcome .chat__message--inner:before {
     left: 100%;
     border-width: 16px 0 0 16px;
     border-left-color: #D9F6FF;
 
 }
 
-.chat-message.income .chat-message-inner:before {
+.chat .chat__message.-income .chat__message--inner:before {
     right: 100%;
     border-width: 16px 16px 0 0;
     border-right-color: #ECEEEF;
 }
 
-.chat-footer {
+.chat .chat__footer {
     height: 66px;
     padding: 15px;
     border-top: 1px solid #CCCCCC;
-}
-
-.form-inline.form-inline-flex {
-    display: flex;
-    flex-direction: row;
-}
-
-.form-inline.form-inline-flex .form-control {
-    display: inline-flex;
-    flex: 0 0 calc(100% - 46px);
 }
 
 .chat .btn-send {
@@ -1196,9 +1202,4 @@ form button[type="submit"]:not(.btn-send) {
     height: 38px;
     background-color: #5BC0DE;
     border-radius: 4px;
-}
-
-.alert.alert-primary {
-    color: #31708F;
-    background: #D9EDF7;
 }
