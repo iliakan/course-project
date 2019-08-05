@@ -379,7 +379,8 @@ form button[type="submit"]:not(.btn-send) {
     color: #D9534F;
 }
 
-.list-group-item.dropdown.show ~ .list-group-item:last-child {
+.list-group-item.dropdown.show ~ .list-group-item:last-child,
+.list-group-item.dropdown.show:last-child {
     border-bottom-right-radius: 0;
 }
 
@@ -412,8 +413,9 @@ form button[type="submit"]:not(.btn-send) {
     margin: 0;
     border: 1px solid #ddd;
     border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-left-color: transparent;
-    padding: .75rem 0;
+    padding: .55rem 0;
 }
 
 @media all and (max-width: 576px) {
